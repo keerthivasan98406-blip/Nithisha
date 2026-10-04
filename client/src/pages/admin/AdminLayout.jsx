@@ -46,7 +46,7 @@ export default function AdminLayout({ activeTab, setActiveTab, navigate, childre
             </span>
           </div>
           <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-rosegold-dark)', marginTop: '2px', fontWeight: 600 }}>
-            Owner Boutique Portal
+            Admin Panel
           </div>
         </div>
 

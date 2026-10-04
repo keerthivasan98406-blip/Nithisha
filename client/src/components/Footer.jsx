@@ -142,7 +142,7 @@ export default function Footer({ navigate }) {
               }}
               style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
             >
-              Owner Portal
+              Admin Login
             </a>
           </div>
         </div>

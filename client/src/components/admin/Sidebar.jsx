@@ -97,7 +97,7 @@ export default function Sidebar() {
             paddingLeft: '2px'
           }}
         >
-          OWNER PORTAL
+          ADMIN PANEL
         </div>
       </div>
 

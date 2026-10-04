@@ -79,7 +79,7 @@ export default function AdminLogin({ navigate }) {
             {settings.shop_name || 'Nithisha Collection'}
           </h2>
           <p style={{ fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-rosegold-dark)', marginTop: '2px', fontWeight: 600 }}>
-            Owner Boutique Portal
+            Admin Portal
           </p>
         </div>
 
@@ -145,7 +145,7 @@ export default function AdminLogin({ navigate }) {
             className="btn-primary"
             style={{ width: '100%', padding: '13px', fontSize: '0.9rem' }}
           >
-            <span>{loading ? 'Authenticating...' : 'Sign In to Owner Portal'}</span>
+            <span>{loading ? 'Authenticating...' : 'Sign In to Admin Portal'}</span>
             <ArrowRight size={16} />
           </button>
 

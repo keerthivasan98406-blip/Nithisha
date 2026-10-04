@@ -46,7 +46,7 @@ export default function TopBar() {
       {/* Left: Active Section Breadcrumb */}
       <div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-          <span>Owner Portal</span>
+          <span>Admin Panel</span>
           <span>/</span>
           <span style={{ color: 'var(--dusty-rose)', fontWeight: 500, textTransform: 'capitalize' }}>
             {activeTab.replace('-', ' ')}
