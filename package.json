@@ -4,7 +4,7 @@
   "description": "Nithisha Collection - Premium Fancy Jewellery Boutique",
   "main": "server/src/index.js",
   "scripts": {
-    "build": "cd client && npm install --include=dev && npm run build && cd ../server && npm install",
+    "build": "cd client && npm install && npm run build && cd ../server && npm install",
     "start": "node server/src/index.js",
     "dev": "node server/src/index.js"
   }
