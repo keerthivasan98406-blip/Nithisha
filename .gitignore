@@ -1,0 +1,23 @@
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Production build output
+dist/
+**/dist/
+build/
+
+# Environment files
+.env
+server/.env
+*.env
+
+# SQLite local data
+server/data/
+
+# OS / Editor logs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
