@@ -7,7 +7,7 @@ export default function Footer({ navigate }) {
 
   const openWhatsApp = () => {
     const number = (settings.whatsapp_number || '+919876543210').replace(/[^0-9]/g, '');
-    const text = encodeURIComponent(`Hello ${settings.shop_name || 'LURELLE'}! I would like to inquire about your jewellery.`);
+    const text = encodeURIComponent(`Hello ${settings.shop_name || 'Nithisha Collection'}! I would like to inquire about your jewellery.`);
     window.open(`https://wa.me/${number}?text=${text}`, '_blank');
   };
 
@@ -45,7 +45,7 @@ export default function Footer({ navigate }) {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
               <Sparkles size={18} color="var(--accent-rosegold)" />
               <span style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', letterSpacing: '0.12em', fontWeight: 600 }}>
-                {settings.shop_name || 'LURELLE'}
+                {settings.shop_name || 'Nithisha Collection'}
               </span>
             </div>
             <p style={{ color: 'var(--accent-rosegold-dark)', fontStyle: 'italic', fontFamily: 'var(--font-serif)', fontSize: '1.05rem', marginBottom: '16px' }}>
@@ -98,7 +98,7 @@ export default function Footer({ navigate }) {
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
                 <Mail size={16} color="var(--accent-rosegold)" style={{ flexShrink: 0 }} />
-                <span>{settings.email || 'hello@lurelle.in'}</span>
+                <span>{settings.email || 'hello@nithishacollection.in'}</span>
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
                 <Clock size={16} color="var(--accent-rosegold)" style={{ flexShrink: 0 }} />
@@ -131,7 +131,7 @@ export default function Footer({ navigate }) {
           }}
         >
           <div>
-            © {new Date().getFullYear()} {settings.shop_name || 'LURELLE'}. All rights reserved. Direct WhatsApp Ordering.
+            © {new Date().getFullYear()} {settings.shop_name || 'Nithisha Collection'}. All rights reserved. Direct WhatsApp Ordering.
           </div>
           <div style={{ display: 'flex', gap: '20px' }}>
             <a

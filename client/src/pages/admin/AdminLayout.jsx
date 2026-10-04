@@ -42,7 +42,7 @@ export default function AdminLayout({ activeTab, setActiveTab, navigate, childre
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Sparkles size={18} color="var(--accent-rosegold)" />
             <span style={{ fontFamily: 'var(--font-serif)', fontSize: '1.45rem', fontWeight: 600 }}>
-              {settings.shop_name || 'LURELLE'}
+              {settings.shop_name || 'Nithisha Collection'}
             </span>
           </div>
           <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-rosegold-dark)', marginTop: '2px', fontWeight: 600 }}>

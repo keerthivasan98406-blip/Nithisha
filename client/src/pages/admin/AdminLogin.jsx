@@ -76,7 +76,7 @@ export default function AdminLogin({ navigate }) {
           </div>
 
           <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', fontWeight: 600, color: 'var(--text-main)' }}>
-            {settings.shop_name || 'LURELLE'}
+            {settings.shop_name || 'Nithisha Collection'}
           </h2>
           <p style={{ fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-rosegold-dark)', marginTop: '2px', fontWeight: 600 }}>
             Owner Boutique Portal

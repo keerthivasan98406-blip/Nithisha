@@ -7,7 +7,7 @@ export default function ContactPage() {
 
   const openWhatsApp = () => {
     const number = (settings.whatsapp_number || '+919876543210').replace(/[^0-9]/g, '');
-    const text = encodeURIComponent(`Hello ${settings.shop_name || 'LURELLE'}! I am contacting you through your website.`);
+    const text = encodeURIComponent(`Hello ${settings.shop_name || 'Nithisha Collection'}! I am contacting you through your website.`);
     window.open(`https://wa.me/${number}?text=${text}`, '_blank');
   };
 
@@ -31,7 +31,7 @@ export default function ContactPage() {
             Get In Touch
           </span>
           <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(2.4rem, 4vw, 3.2rem)', fontWeight: 500 }}>
-            Connect with {settings.shop_name || 'LURELLE'}
+            Connect with {settings.shop_name || 'Nithisha Collection'}
           </h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.96rem', marginTop: '10px' }}>
             We are here to assist with custom styling inquiries, gifting orders, and product availability.
@@ -118,7 +118,7 @@ export default function ContactPage() {
                   <div>
                     <div style={{ fontSize: '0.76rem', textTransform: 'uppercase', color: 'var(--text-muted)' }}>Email</div>
                     <div style={{ color: 'var(--text-main)', marginTop: '2px' }}>
-                      {settings.email || 'hello@lurelle.in'}
+                      {settings.email || 'hello@nithishacollection.in'}
                     </div>
                   </div>
                 </div>
@@ -230,7 +230,7 @@ export default function ContactPage() {
                     gap: '6px'
                   }}
                 >
-                  <span>@lurelle.jewels</span>
+                  <span>@nithisha_collection</span>
                   <Sparkles size={14} />
                 </a>
               )}

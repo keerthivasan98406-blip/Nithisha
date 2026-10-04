@@ -7,7 +7,7 @@ export default function AboutPage({ navigate }) {
 
   const openWhatsApp = () => {
     const number = (settings.whatsapp_number || '+919876543210').replace(/[^0-9]/g, '');
-    const text = encodeURIComponent(`Hello ${settings.shop_name || 'LURELLE'}! I read about your story and would love to chat.`);
+    const text = encodeURIComponent(`Hello ${settings.shop_name || 'Nithisha Collection'}! I read about your story and would love to chat.`);
     window.open(`https://wa.me/${number}?text=${text}`, '_blank');
   };
 
@@ -49,7 +49,7 @@ export default function AboutPage({ navigate }) {
         >
           <img
             src={settings.about_image || 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80'}
-            alt="LURELLE Jewellery Boutique"
+            alt="Nithisha Collection Boutique"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
         </div>

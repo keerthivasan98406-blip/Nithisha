@@ -1,9 +1,9 @@
 @echo off
-title LURELLE Jewellery Boutique Server
+title Nithisha Collection Server
 cd /d "%~dp0"
 
 echo ======================================================
-echo    LURELLE - Premium Fancy Jewellery Boutique
+echo    Nithisha Collection - Premium Fancy Jewellery Boutique
 echo ======================================================
 echo.
 echo Starting full-stack server on http://localhost:5000...
