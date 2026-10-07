@@ -20,7 +20,12 @@ const updates = [
   ['phone_number', '+91 90807 72273'],
   ['email', 'hello@nithishacollection.in'],
   ['instagram_url', 'https://instagram.com/nithisha_collection'],
-  ['about_story', 'Founded with a passion for modern elegance, Nithisha Collection brings you premium, runway-inspired fashion jewellery without luxury markups.']
+  ['about_story', 'Founded with a passion for modern elegance, Nithisha Collection brings you premium, runway-inspired fashion jewellery without luxury markups.'],
+  ['owner_name', 'Nithisha'],
+  ['owner_title', 'Boutique Owner & Lead Curator'],
+  ['owner_email', 'hello@nithishacollection.in'],
+  ['owner_phone', '+91 90807 72273'],
+  ['owner_image', 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80']
 ];
 
 const stmt = db.prepare('INSERT OR REPLACE INTO website_settings (key, value) VALUES (?, ?)');

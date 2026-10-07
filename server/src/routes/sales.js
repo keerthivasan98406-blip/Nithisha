@@ -41,6 +41,7 @@ router.get('/dashboard-stats', authenticateToken, async (req, res) => {
 
     const todayStats = todaySalesData[0] || { sales: 0, profit: 0, items_sold: 0 };
     const monthlyStats = monthlySalesData[0] || { sales: 0, profit: 0, items_sold: 0 };
+    const recentSales = await Sale.find({}).sort({ sale_date: -1 }).limit(10);
 
     res.json({
       products: {
@@ -50,7 +51,8 @@ router.get('/dashboard-stats', authenticateToken, async (req, res) => {
         categories: totalCategories
       },
       today: todayStats,
-      monthly: monthlyStats
+      monthly: monthlyStats,
+      recent_sales: recentSales || []
     });
   } catch (err) {
     console.error('Error fetching dashboard stats:', err);

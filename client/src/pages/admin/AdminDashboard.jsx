@@ -126,12 +126,14 @@ export default function AdminDashboard({ setActiveTab }) {
     );
   }
 
-  const { products, today, monthly, recent_sales } = stats || {
+  const { products, today, monthly, recent_sales = [] } = stats || {
     products: { total: 0, available: 0, sold_out: 0, categories: 0 },
     today: { sales: 0, profit: 0, items_sold: 0 },
     monthly: { sales: 0, profit: 0, items_sold: 0 },
     recent_sales: []
   };
+
+  const salesList = recent_sales || [];
 
   return (
     <div>
@@ -296,7 +298,7 @@ export default function AdminDashboard({ setActiveTab }) {
           </button>
         </div>
 
-        {recent_sales.length === 0 ? (
+        {salesList.length === 0 ? (
           <div style={{ textAlign: 'center', padding: '40px 0', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
             No sales recorded yet. Click "+ Record Customer Sale" above to log sales from WhatsApp orders.
           </div>
@@ -317,7 +319,7 @@ export default function AdminDashboard({ setActiveTab }) {
                 </tr>
               </thead>
               <tbody>
-                {recent_sales.map((sale) => {
+                {salesList.map((sale) => {
                   const margin = sale.total_revenue > 0 ? ((sale.total_profit / sale.total_revenue) * 100).toFixed(1) : 0;
                   return (
                     <tr key={sale.id} style={{ borderBottom: '1px solid var(--border-light)' }}>

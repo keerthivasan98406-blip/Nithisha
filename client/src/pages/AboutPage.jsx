@@ -84,6 +84,55 @@ export default function AboutPage({ navigate }) {
               {settings.about_quality}
             </p>
           </div>
+
+          {/* Owner Profile Card */}
+          {settings.owner_name && (
+            <div
+              style={{
+                background: '#FFFFFF',
+                borderRadius: 'var(--radius-md)',
+                padding: '28px',
+                border: '1px solid var(--border-light)',
+                boxShadow: 'var(--shadow-card)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '24px',
+                flexWrap: 'wrap'
+              }}
+            >
+              {settings.owner_image && (
+                <img
+                  src={settings.owner_image}
+                  alt={settings.owner_name}
+                  style={{
+                    width: '90px',
+                    height: '90px',
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                    border: '3px solid var(--accent-rosegold)',
+                    flexShrink: 0
+                  }}
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
+              )}
+              <div>
+                <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--accent-rosegold-dark)', fontWeight: 600 }}>
+                  Meet the Curator
+                </span>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.4rem', fontWeight: 600, margin: '2px 0 4px 0' }}>
+                  {settings.owner_name}
+                </h3>
+                <p style={{ fontSize: '0.90rem', color: 'var(--text-secondary)', margin: 0 }}>
+                  {settings.owner_title || 'Boutique Owner & Curator'}
+                </p>
+                {settings.owner_phone && (
+                  <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '4px' }}>
+                    Direct WhatsApp & Orders: {settings.owner_phone}
+                  </p>
+                )}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* CTAs */}

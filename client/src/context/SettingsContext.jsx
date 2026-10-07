@@ -22,7 +22,12 @@ export const defaultSettings = {
   about_story: "Founded with a passion for modern elegance, Nithisha Collection brings you premium, runway-inspired fashion jewellery without luxury markups. We believe that stunning jewellery shouldn't be reserved only for royal lockers or rare weddings—it belongs in your everyday moments, your celebrations, and your personal style story.",
   about_philosophy: 'From anti-tarnish everyday rings to show-stopping cocktail earrings, every design in our catalogue is handpicked for impeccable craftsmanship, lightweight comfort, and radiant finishing.',
   about_quality: 'Skin-friendly alloys, durable high-grade plating, premium cubic zirconia, baroque faux pearls, and artisan enamel—curated to stay brilliant.',
-  about_image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80'
+  about_image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80',
+  owner_name: 'Nithisha',
+  owner_title: 'Boutique Owner & Lead Curator',
+  owner_email: 'hello@nithishacollection.in',
+  owner_phone: '+91 90807 72273',
+  owner_image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'
 };
 
 export function SettingsProvider({ children }) {
